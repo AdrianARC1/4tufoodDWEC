@@ -3,7 +3,7 @@
     <div id="divprin">
       <img src="../assets/paella.png" alt="">
       <p>4tufood</p>
-      <a href="./VistaProductos.vue"><button>Realiza tu pedido</button></a>
+      <a href="/productos"><button>Realiza tu pedido</button></a>
     </div>
   </section>
 </template>

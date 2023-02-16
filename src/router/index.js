@@ -6,17 +6,17 @@ import productos from '../views/VistaProductos.vue'
 const routes = [
   {
     path: '/',
-    name: 'VistaInicio',
+    name: 'inicio',
     component: inicio
   },
   {
     path: '/favoritos',
-    name: 'VistaFavoritos',
+    name: 'favoritos',
     component: favoritos
   },
   {
     path: '/productos',
-    name: 'VistaProductos',
+    name: 'productos',
     component: productos
   }
 ]
