@@ -3,8 +3,9 @@
     <div id="divprin">
       <img src="../assets/paella.png" alt="">
       <p>4tufood</p>
-      <a href="/productos"><button>Realiza tu pedido</button></a>
+    <router-link to="/productos">Realiza tu pedido</router-link>
     </div>
+
   </section>
 </template>
 
@@ -14,7 +15,7 @@ export default {
 }
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
 *
   margin: 0
   padding: 0
@@ -24,7 +25,9 @@ section
   display: flex
   align-items: center
   justify-content: center
-  background: #66D678
+  background: url("../assets/stacked-waves-haikei.png")
+  background-repeat: no-repeat
+  background-size: cover
   #divprin
     height: 40vh
     display: flex
@@ -45,6 +48,44 @@ section
       
       border: none
   
+.wave
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    overflow: hidden
+    line-height: 0
 
 
+.wave svg
+    position: relative
+    display: block
+    width: calc(100% + 1.3px)
+    height: 150px
+
+
+.wave .shape-fill
+    fill: #FFFFFF
+
+.wave2
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    overflow: hidden
+    line-height: 0
+
+
+.wave2 svg
+    position: relative
+    display: block
+    width: calc(100% + 1.3px)
+    height: 150px
+
+
+.wave2 .shape-fill
+    fill: #FFFFFF
+
+.flip
+  transform: rotate(180deg)
 </style>

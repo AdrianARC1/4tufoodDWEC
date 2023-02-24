@@ -1,4 +1,6 @@
 import { createStore } from 'vuex'
+import productos from '@/modules/productos'
+import favoritos from '@/modules/favoritos'
 
 export default createStore({
   state: {
@@ -11,5 +13,7 @@ export default createStore({
   actions: {
   },
   modules: {
+    productos,
+    favoritos
   }
 })
